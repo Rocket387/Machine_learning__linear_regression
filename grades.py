@@ -12,6 +12,7 @@ y = [99,86,87,88,111,86,103,87,94,78,77,85,86]
 #this method returns important key values of linear regression
 slope, intercept, r, p, std_err = stats.linregress(x, y)
 # r = relationship between values of x axis and y axis. values range from -1 to 1 (100% related), 0 = no relationship
+print(r)
 
 def myfunc(x):
     return slope * x + intercept
@@ -20,6 +21,7 @@ def myfunc(x):
 
 speed = myfunc(7)
 print(speed) # prints speed of a 7 year old car
+
 
 mymodel = list(map(myfunc, x))
 
